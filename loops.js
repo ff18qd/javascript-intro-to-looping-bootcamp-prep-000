@@ -5,9 +5,11 @@ function forLoop(array) {
     }
     else
     {
-      array.push('I am ${i+1} strange loops')
+      j = i + 1
+      array.push('I am ${j} strange loops')
     }
   }
+  return array
 }
 
 function whileLoop(n) {
@@ -27,4 +29,5 @@ function doWhileLoop(array) {
    array.pop()
  } while (maybeTrue() && array.length > 0);
 
+ return array
 }
